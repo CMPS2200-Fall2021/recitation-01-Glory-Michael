@@ -1,6 +1,6 @@
 # CMPS 2200  Recitation 01
 
-**Name (Team Member 1):**_________________________  
+**Name (Team Member 1):**___Michael Xu____________  
 **Name (Team Member 2):**_________________________
 
 In this recitation, we will investigate asymptotic complexity. Additionally, we will get familiar with the various technologies we'll use for collaborative coding.
@@ -13,8 +13,8 @@ To complete this recitation, follow the instructions in this document. Some of y
 - Click on the assignment link sent through canvas and accept the assignment.
 - Click on your personal github repository for the assignment (e.g., https://github.com/tulane-cmps2200/recitation-01-your_username).
 - [Clone](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository) the repository to your local device
-- Complete the lab task 
-- [Add, commit, and push](https://docs.github.com/en/github/managing-files-in-a-repository/managing-files-using-the-command-line/adding-a-file-to-a-repository-using-the-command-line) your completed lab back up to GitHub. 
+- Complete the lab task
+- [Add, commit, and push](https://docs.github.com/en/github/managing-files-in-a-repository/managing-files-using-the-command-line/adding-a-file-to-a-repository-using-the-command-line) your completed lab back up to GitHub.
   - You will need to issue `git add` for all files that you have modified, e.g., `main.py`, `README.md`, and any others that you modify as well.
   - For example, on the command line, in the same directory as your cloned lab:
 ```
@@ -26,7 +26,7 @@ $ git push origin main
 You'll work with a partner to complete this recitation. You will be able to code together in the same `repl.it` instance. You can choose whose repl.it instance you will share. This person will click the "Share" button in their repl.it instance and email the lab partner.
 
 ## Turning in your work
-- Only one team member needs to push your completed lab to github. 
+- Only one team member needs to push your completed lab to github.
 - In the README.md file, include the name of the team members.
 
 
@@ -34,19 +34,20 @@ You'll work with a partner to complete this recitation. You will be able to code
 
 We'll compare the running times of `linear_search` and `binary_search` empirically.
 
-- [ ] 1. In `main.py`, the implementation of `linear_search` is already complete. Your task is to implement `binary_search`. Implement a recursive solution using the helper function `_binary_search`. 
+- [ ] 1. In `main.py`, the implementation of `linear_search` is already complete. Your task is to implement `binary_search`. Implement a recursive solution using the helper function `_binary_search`.
 
 - [ ] 2. Test that your function is correct by calling from the command-line `pytest main.py::test_binary_search`
 
 - [ ] 3. Write at least two additional test cases in `test_binary_search` and confirm they pass.
 
-- [ ] 4. Describe the worst case input value of `key` for `linear_search`? for `binary_search`? 
+- [ ] 4. Describe the worst case input value of `key` for `linear_search`? for `binary_search`?
 
-**TODO: your answer goes here**
+**The worst case input is when the key is out of range for the list in either linear_search or binary_search : O(n)**
 
-- [ ] 5. Describe the best case input value of `key` for `linear_search`? for `binary_search`? 
+- [ ] 5. Describe the best case input value of `key` for `linear_search`? for `binary_search`?
 
-**TODO: your answer goes here**
+**For linear search, the best case is when the value is equal to the first element of the list, in which case only one comparison is needed.
+For binary search, if the middle element is the target, the algorithm will finish in one iteration.**
 
 - [ ] 6. Complete the `time_search` function to compute the running time of a search function. Note that this is an example of a "higher order" function, since one of its parameters is another function.
 
